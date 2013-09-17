@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="com.phonegap.PGLowLatencyAudio"
+	version="0.1.0">
+
+	<name>Play Sound</name>
+
+		<description>
+			This plugin allows you to play sounds in android.
+		</description>
+
+		<license>MIT</license>
+
+	<engines>
+		<engine name="cordova" version=">=2.3.0" />
+	</engines>
+
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="config.xml" parent="/*">
+			<feature name="PGLowLatencyAudio">
+				<param name="android-package" value="com.phonegap.PGLowLatencyAudio" />
+			</feature>
+		</config-file>
+
+	</platform>
+
+
+</plugin>
